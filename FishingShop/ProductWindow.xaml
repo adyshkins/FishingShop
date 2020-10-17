@@ -19,31 +19,49 @@
                     <GradientStop Color="#FF453C9D" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
+            
+            <StackPanel>
+                
+                <TextBlock Text="Каталог товаров"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="20"
+                           Margin="5 15"
+                           HorizontalAlignment="Center"/>
+                <Rectangle Width="200"
+                           Height="3" Fill="#FFF3C5C5"
+                           />
 
-            <ListView Margin="0 20">
-                <ListViewItem x:Name="btn1" 
+                <ListView Margin="0 20">
+                    <ListViewItem x:Name="btn1" 
                               Content="Главная страница" 
                               Foreground="White"
                               FontSize="20" Selected="btn1_Selected" />
 
-                <ListViewItem x:Name="btn2" Content="Главная страница" 
+                    <ListViewItem x:Name="btn2" Content="Cтраница 2" 
                               Foreground="White"
                               FontSize="20" Selected="btn2_Selected"/>
 
-                <ListViewItem x:Name="btn3" 
-                              Content="Главная страница" 
+                    <ListViewItem x:Name="btn3" 
+                              Content="Cтраница 3" 
                               Foreground="White"
                               FontSize="20" Selected="btn3_Selected"/>
-            </ListView>
+                    
+                </ListView>
+            </StackPanel>           
+            
 
         </Grid>
 
         <Grid Width="800" HorizontalAlignment="Right">
             <StackPanel>
                 <Grid Height="50"
-                  VerticalAlignment="Top"></Grid>
+                  VerticalAlignment="Top">
+                    
+                </Grid>
 
                 <Grid  Height="120" Background="#FF140A74">
+                    
                     <TextBlock Text="Добро пожаловать!" FontSize="30"
                                Foreground="White"
                                VerticalAlignment="Center"
@@ -51,13 +69,18 @@
                 </Grid>
 
 
-                <Grid></Grid>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="* Популярные категории"
+                                   FontSize="20"
+                                   Margin="10"
+                                   FontWeight="Bold"
+                                   Foreground="Gray"/>
+                    </StackPanel>
+                </Grid>
+                
             </StackPanel>
-            <Grid Height="50"
-                  VerticalAlignment="Top"></Grid>
-
-            <Grid></Grid>
-            <Grid></Grid>
+            
         </Grid>
     </Grid>
 </Window>
