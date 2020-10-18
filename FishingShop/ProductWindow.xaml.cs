@@ -26,7 +26,7 @@ namespace FishingShop
 
         private void btn1_Selected(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Главная");
+            framePage.Navigate(new ProductCategoryPage() );
         }
 
         private void btn2_Selected(object sender, RoutedEventArgs e)

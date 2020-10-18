@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="FishingShopModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" />
         <EntityTypeShape EntityType="FishingShopModel.User" Width="1.5" PointX="3" PointY="1" />
         <AssociationConnector Association="FishingShopModel.FK_User_RoleUser" />
+        <EntityTypeShape EntityType="FishingShopModel.ProductCategory" Width="1.5" PointX="5.875" PointY="1.375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

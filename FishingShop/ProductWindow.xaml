@@ -60,7 +60,7 @@
                     
                 </Grid>
 
-                <Grid  Height="120" Background="#FF140A74">
+                <Grid  Height="100" Background="#FF140A74">
                     
                     <TextBlock Text="Добро пожаловать!" FontSize="30"
                                Foreground="White"
@@ -76,6 +76,14 @@
                                    Margin="10"
                                    FontWeight="Bold"
                                    Foreground="Gray"/>
+                        <Frame x:Name="framePage" NavigationUIVisibility="Hidden" Height="550">
+                            
+                        </Frame>
+                        
+                        <Grid Height="50" VerticalAlignment="Bottom">
+                            <Button x:Name="btnBack"/>
+                        </Grid>
+
                     </StackPanel>
                 </Grid>
                 
