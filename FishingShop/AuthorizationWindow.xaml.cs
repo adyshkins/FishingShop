@@ -50,5 +50,20 @@ namespace FishingShop
             }
 
         }
+
+        private void btnForgot_Click(object sender, RoutedEventArgs e)
+        {
+            RememberLoginPasswordWindow remember = new RememberLoginPasswordWindow();
+            this.Hide();
+            remember.ShowDialog();
+            this.Show();
+
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
