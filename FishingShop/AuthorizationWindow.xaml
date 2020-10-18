@@ -26,17 +26,16 @@
                        TextWrapping="Wrap"
                        HorizontalAlignment="Center"
                        Margin="0 5 0 0"/>
+            <Button x:Name="btnClose" Style="{StaticResource MaterialDesignFlatButton}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Foreground="White"
+                    Click="btnClose_Click">
 
-            <Button x:Name="btnClose"
-                        Style="{StaticResource MaterialDesignFlatMidBgButton}"
-                        Height="20"
-                        Width="20"
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Top"
-                        Margin="0 5 5 0"
-                        Click="btnClose_Click">
-               
+                <materialDesign:PackIcon Kind="Close"/>
+
             </Button>
+
         </Grid>
         <Grid Height="300" VerticalAlignment="Bottom">
 
