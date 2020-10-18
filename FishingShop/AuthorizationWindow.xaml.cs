@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,6 +21,7 @@ namespace FishingShop
     /// </summary>
     public partial class AuthorizationWindow : Window
     {
+        private int numberError = 0;
         public AuthorizationWindow()
         {
             InitializeComponent();
@@ -37,7 +39,14 @@ namespace FishingShop
             }
             else
             {
+                if (numberError == 5)
+                {
+                    MessageBox.Show("Всё! С меня хватит? Зови админа", "", MessageBoxButton.OK, MessageBoxImage.Error);
+                    btnLogin.IsEnabled = false;
+                    return;
+                }
                 tbError.Visibility = Visibility.Visible;
+                numberError++;
             }
 
         }

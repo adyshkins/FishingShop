@@ -11,7 +11,7 @@
         WindowStartupLocation="CenterScreen" 
         WindowStyle="None" >
     
-    <Grid>
+    <Grid x:Name="mainGrid">
         <Grid Height="200" VerticalAlignment="Top">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
