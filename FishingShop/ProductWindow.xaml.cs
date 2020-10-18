@@ -23,6 +23,10 @@ namespace FishingShop
         {
             InitializeComponent();
         }
+        public ProductWindow(int idUser)
+        {
+            InitializeComponent();
+        }
 
         private void btn1_Selected(object sender, RoutedEventArgs e)
         {
@@ -39,6 +43,13 @@ namespace FishingShop
             MessageBox.Show("2");
         }
 
-        
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            AuthorizationWindow authorizationWindow = new AuthorizationWindow();
+            MainGrid.Opacity = 0.1;
+            authorizationWindow.ShowDialog();
+            
+            
+        }
     }
 }

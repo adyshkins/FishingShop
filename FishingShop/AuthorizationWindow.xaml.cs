@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using static FishingShop.AppData;
 namespace FishingShop
 {
     /// <summary>
@@ -27,6 +27,18 @@ namespace FishingShop
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            var userResult = context.User.Where(u => u.Login == txtLogin.Text && u.Password == txtPassword.Password).FirstOrDefault();
+            if (userResult != null)
+            {
+                ProductWindow productWindow = new ProductWindow(userResult.IdUser);
+                this.Hide();
+                productWindow.ShowDialog();
+                
+            }
+            else
+            {
+                tbError.Visibility = Visibility.Visible;
+            }
 
         }
     }

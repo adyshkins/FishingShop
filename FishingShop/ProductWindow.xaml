@@ -9,7 +9,7 @@
         ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" 
         WindowStyle="None" >
-    <Grid>
+    <Grid x:Name="MainGrid">
         <Grid Width="200" 
               HorizontalAlignment="Left">
 
@@ -57,7 +57,12 @@
             <StackPanel>
                 <Grid Height="50"
                   VerticalAlignment="Top">
-                    
+                    <Button Content="Вход для менеджера"
+                            Width="150" 
+                            HorizontalAlignment="Right"
+                            Margin="10 0"
+                            x:Name="btnLogin"
+                            Click="btnLogin_Click"/>
                 </Grid>
 
                 <Grid  Height="100" Background="#FF140A74">
